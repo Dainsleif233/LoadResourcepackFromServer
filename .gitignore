@@ -1,0 +1,63 @@
+# --- 通用开发环境忽略项 ---
+*.class
+*.log
+*.lock
+*.dll
+*.so
+*.dylib
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Gradle 构建工具 ---
+.gradle/
+build/
+out/
+bin/
+!src/**/bin/
+
+# --- 依赖缓存 ---
+gradle-app.setting
+
+# --- IDE 配置文件 ---
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.settings/
+.project
+.classpath
+.factorypath
+
+# VSCode
+.vscode/
+!.vscode/launch.json
+
+# --- 本地运行生成文件 ---
+run/
+
+# --- 环境配置（含敏感信息）---
+gradle.properties
+gradle/
+local.properties
+
+# --- 构建产物 ---
+*.jar
+!build/libs/*-dev.jar
+!build/libs/*-sources.jar
+
+# --- 日志文件 ---
+logs/
+debug.log
+
+# --- 测试覆盖率报告 ---
+coverage/
+*.lcov
+
+# --- 临时文件 ---
+temp/
+tmp/
