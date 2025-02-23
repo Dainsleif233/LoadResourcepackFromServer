@@ -10,7 +10,7 @@
   "environment": "server",
   "entrypoints": {
     "main": [
-      "top.syshub.loadResourcepackFromServer.LoadResourcepackFromServer"
+      "top.syshub.loadResourcepackFromServer.LoadResourcepackFromServerFabric"
     ]
   },
   "depends": {
