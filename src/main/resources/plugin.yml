@@ -1,9 +1,8 @@
 name: LoadResourcepackFromServer
-version: '1.1.1'
+version: '${mod_version}'
 main: top.syshub.loadResourcepackFromServer.LoadResourcepackFromServerPaper
-api-version: '1.19'
+api-version: '${minecraft_version}'
 load: STARTUP
 authors: [ Dainsleif ]
 description: Have the client download the resource pack directly from the game server.
 website: mc.syshub.top
-depend: [MESH-Lib]

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "loadresourcepackfromserver",
-  "version": "${version}",
+  "version": "${mod_version}",
   "name": "LoadResourcepackFromServer",
   "description": "Have the client download the resource pack directly from the game server.",
-  "authors": [],
+  "authors": [ "Dainsleif" ],
   "contact": {},
   "license": "GPL-3.0",
   "environment": "server",
@@ -13,6 +13,9 @@
       "top.syshub.loadResourcepackFromServer.LoadResourcepackFromServerFabric"
     ]
   },
+  "mixins": [
+    "loadresourcepackfromserver.mixins.json"
+  ],
   "depends": {
     "minecraft": ">=${minecraft_version}"
   }
