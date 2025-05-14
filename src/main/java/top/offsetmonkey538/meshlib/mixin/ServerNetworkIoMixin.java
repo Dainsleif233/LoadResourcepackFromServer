@@ -13,10 +13,10 @@ import static top.offsetmonkey538.meshlib.impl.ProtocolHandler.MOD_ID;
 public abstract class ServerNetworkIoMixin {
 
     @Inject(
-            method = "initChannel",
+            method = "initChannel(Lio/netty/channel/Channel;)V",
             at = @At("TAIL")
     )
-    private void meshlib$addHttpHandler(Channel channel, CallbackInfo ci) {
+    private void addHttpHandler(Channel channel, CallbackInfo ci) {
         channel.pipeline().addFirst(MOD_ID, new ProtocolHandler());
     }
 }
